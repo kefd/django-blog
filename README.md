@@ -89,3 +89,23 @@ in env shell put
 ```bash
 python manage.py runserver
 ```
+
+if you want to serve static files in development
+```python
+# Use static() to add url mapping to serve static files during development (only)
+from django.conf import settings
+from django.conf.urls.static import static
+
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+```
+
+create a urls.py file in your app and put:
+```python
+from django.urls import path
+from catalog import views
+
+
+urlpatterns = [
+
+]
+```
