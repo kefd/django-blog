@@ -34,13 +34,18 @@ in setting.py json; INSTALLED APPS end put:
 in DATABASES update to:
 ```python
 'default': {
-    'ENGINE': 'django.db.backends.mariadb',
+    'ENGINE': 'django.db.backends.mysql',
     'NAME': 'teste',
     'USER': 'root',
     'PASSWORD': 'toor',
     'HOST': 'localhost',
     'PORT': '3306',
 }
+or the default sqlite3
+'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'mydatabase',
+    }
 ```
 in TIMEZONE update to:
 ```python
