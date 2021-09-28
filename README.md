@@ -109,3 +109,8 @@ urlpatterns = [
 
 ]
 ```
+and run it in env to migrate models to database:
+```bash
+>> python3 manage.py makemigrations
+>> python3 manage.py migrate
+```
