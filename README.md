@@ -28,11 +28,11 @@ $ poetry shell
 >> python manage.py startapp catalog
 ```
 in setting.py json; INSTALLED APPS end put:
-```json
+```python
 'catalog.apps.CatalogConfig', 
 ```
 in DATABASES update to:
-```json
+```python
 'default': {
     'ENGINE': 'django.db.backends.mariadb',
     'NAME': 'teste',
@@ -41,4 +41,30 @@ in DATABASES update to:
     'HOST': 'localhost',
     'PORT': '3306',
 }
+```
+in TIMEZONE update to:
+```python
+TIME_ZONE = 'America/Sao_Paulo'
+```
+others to change in future is
+```python
+SECRET_KEY =
+```
+for production
+and 
+```python
+DEBUG = True 
+```
+just in development
+
+To add routes to an app:
+```python
+# in urls.py
+# Use include() to add paths from the catalog application
+from django.conf.urls import include
+from django.urls import path
+
+urlpatterns += [
+    path('catalog/', include('catalog.urls')),
+]
 ```
