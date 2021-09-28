@@ -68,3 +68,13 @@ urlpatterns += [
     path('catalog/', include('catalog.urls')),
 ]
 ```
+
+sei praq n mas adiciona no final do arquivo tbm
+para redirecionar a base url pra o app criado em /catalog/
+```python
+#Add URL maps to redirect the base URL to our application
+from django.views.generic import RedirectView
+urlpatterns += [
+    path('', RedirectView.as_view(url='/catalog/')),
+]
+```
