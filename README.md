@@ -78,3 +78,9 @@ urlpatterns += [
     path('', RedirectView.as_view(url='/catalog/')),
 ]
 ```
+
+TO RUN/START DEV SERVER
+in env shell put
+```bash
+python manage.py runserver
+```
