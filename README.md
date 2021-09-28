@@ -16,3 +16,12 @@ install django framework
 `$ poetry add django@latest`
 
 
+or
+
+```bash
+$ mkdir <project-name>
+$ cd <project-name>
+$ poetry init --no-interaction --dependency django
+$ poetry install
+$ poetry run django-admin.py startproject djangodemo
+```
