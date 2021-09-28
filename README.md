@@ -24,4 +24,21 @@ $ cd <project-name>
 $ poetry init --no-interaction --dependency django
 $ poetry install
 $ poetry run django-admin.py startproject djangodemo
+$ poetry shell
+>> python manage.py startapp catalog
+```
+in setting.py json; INSTALLED APPS end put:
+```json
+'catalog.apps.CatalogConfig', 
+```
+in DATABASES update to:
+```json
+'default': {
+    'ENGINE': 'django.db.backends.mariadb',
+    'NAME': 'teste',
+    'USER': 'root',
+    'PASSWORD': 'toor',
+    'HOST': 'localhost',
+    'PORT': '3306',
+}
 ```
