@@ -120,4 +120,9 @@ O comando makemigrations cria (mas não aplica) as migrações para todos aplica
 
 O comando migrate aplica as migrações em seu banco de dados (Django rastreia quais foram adicionados ao banco de dados atual).
 
+to create a user to login in django admin route
+(in enviroment)
+```bash
+>> python manage.py createsuperuser
+```
 
