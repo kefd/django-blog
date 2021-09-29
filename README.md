@@ -50,6 +50,8 @@ or the default sqlite3
 in TIMEZONE update to:
 ```python
 TIME_ZONE = 'America/Sao_Paulo'
+# and language code
+# LANGUAGE_CODE = 'pt-br'
 ```
 others to change in future is
 ```python
