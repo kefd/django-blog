@@ -128,3 +128,11 @@ to create a user to login in django admin route
 >> python manage.py createsuperuser
 ```
 
+VIEWs
+
+to use views to render html create a directory called `templates/` with a `index.html` file in your app
+and a route to work 
+```python
+def home(request, name):
+    return render(request, 'index.html')
+```
