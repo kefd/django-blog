@@ -29,7 +29,7 @@ $ poetry shell
 ```
 in setting.py json; INSTALLED APPS end put:
 ```python
-'catalog.apps.CatalogConfig', 
+'<app-name>.apps.<app-name-first-letter-upper>Config', 
 ```
 in DATABASES update to:
 ```python
