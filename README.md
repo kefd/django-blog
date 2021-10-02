@@ -23,7 +23,7 @@ $ mkdir <project-name>
 $ cd <project-name>
 $ poetry init --no-interaction --dependency django
 $ poetry install
-$ poetry run django-admin.py startproject djangodemo
+$ poetry run django-admin.py startproject <project-name>
 $ poetry shell
 >> python manage.py startapp catalog
 ```
