@@ -25,7 +25,7 @@ $ poetry init --no-interaction --dependency django
 $ poetry install
 $ poetry run django-admin startproject <project-name>
 $ poetry shell
->> python manage.py startapp catalog
+>> python manage.py startapp <app-name>
 ```
 in setting.py json; INSTALLED APPS end put:
 ```python
